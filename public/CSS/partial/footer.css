@@ -131,7 +131,6 @@ footer {
         .footer__body__urls__last-row__social {
           width: 100%;
           height: 80px;
-          background-: brown;
           display: flex;
           flex-flow: row wrap;
           padding-left: 10px;
