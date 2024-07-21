@@ -1,0 +1,76 @@
+.mostPopularBrands {
+  width: 100%;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  .mostPopularBrands__center {
+    width: 1336px;
+    height: inherit;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    .mostPopularBrands__center__top {
+      width: inherit;
+      height: 80px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      h6 {
+        padding-right: 10px;
+        font-family: var(--IranYekan);
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 44px;
+        color: #0c0c0c;
+        text-align: center;
+      }
+    }
+    .mostPopularBrands__center__swiper {
+      width: inherit;
+      height: 140px;
+      display: flex;
+      .swiper {
+        width: 99%;
+        height: 100%;
+      }
+      .swiper-slide {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        .swiper-slider-brands {
+          width: 135px;
+          height: 115px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .swiper-slider-brands__a {
+            width: 100%;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 110px;
+              height: 110px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              margin: 0 auto;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vertical-line {
+  width: 1px;
+  height: 115px;
+  background-color: #f0f0f1;
+}

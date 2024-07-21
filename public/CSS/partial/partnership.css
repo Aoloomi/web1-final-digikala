@@ -1,0 +1,22 @@
+.partnership {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    .partnership__center {
+      width: 1336px;
+      height: 240px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      column-gap: 1px;
+  
+      img {
+        width: 49.5%;
+        height: inherit;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    }
+  }

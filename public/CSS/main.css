@@ -1,0 +1,38 @@
+@import "./partial/setting.css";
+@import "./partial/header.css";
+@import "./partial/story.css";
+@import "./partial/slider.css";
+@import "./partial/services.css";
+@import "./partial/amazing.css";
+@import "./partial/supermarketamazing.css";
+@import "./partial/brouchor.css";
+@import "./partial/category.css";
+@import "./partial/partnership.css";
+@import "./partial/mostPopularBrands.css";
+@import "./partial/yourTaste.css";
+@import "./partial/digiclub.css";
+@import "./partial/mostSales.css";
+@import "./partial/hottestLastFewHours.css";
+@import "./partial/discount.css";
+@import "./partial/digimag.css";
+@import "./partial/supermarketButton.css";
+@import "./partial/support-button.css";
+@import "./partial/footer.css";
+/* contact-us */
+@import "./partial/contact-us/form.css";
+@import "./partial/contact-us/holiday.css";
+@import "./partial/contact-us/information.css";
+/* amazing-page */
+@import "./partial/amazingPage/amazing-slider.css";
+@import "./partial/amazingPage/productCat.css";
+@import "./partial/amazingPage/specialAmazing.css";
+@import "./partial/amazingPage/runningOut.css";
+@import "./partial/amazingPage/amazingsupermarket.css";
+@import "./partial/amazingPage/digiplusMembers.css";
+@import "./partial/amazingPage/amazing-custom.css";
+@import "./partial/amazingPage/tommorow-amazing.css";
+@import "./partial/amazingPage/all-amazing.css";
+
+
+
+

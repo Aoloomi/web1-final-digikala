@@ -1,0 +1,721 @@
+.all-amazing {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  font-family: var(--IranYekan), sans-serif;
+  padding-bottom: 70px;
+
+  .all-amazing__center {
+    width: 1645px;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    .all-amazing__center__header {
+      h4 {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 33.6px;
+      }
+    }
+
+    .all-amazing__center__body {
+      display: flex;
+      flex-flow: row wrap;
+
+      .all-amazing__center__body__filter {
+        width: 270px;
+        height: fit-content;
+        border: 1px solid #e0e0e2;
+        box-shadow: 0 0px 0.5px #2b2b2b;
+        border-radius: 6px;
+        padding: 15px;
+        display: flex;
+        flex-flow: column wrap;
+        position: sticky;
+        top: 1vh;
+        right: 2vw;
+        .all-amazing__center__body__filter__header {
+          height: 40px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          h4 {
+            font-size: 19px;
+            color: #3f4064;
+            font-weight: 700;
+            line-height: 39.9px;
+          }
+          a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #19bfd3;
+            font-weight: 700;
+            line-height: 26.04px;
+          }
+        }
+
+        .all-amazing__center__body__filter__choice {
+          height: fit-content;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #e0e0e2;
+          padding-bottom: 15px;
+          padding-top: 15px;
+          
+
+          .all-amazing__center__body__filter__choice__item {
+            width: 185px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 10px;
+            
+            h5 {
+              font-size: 15px;
+              color: #3f4064;
+              font-weight: 700;
+              line-height: 32.25px;
+            }
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+
+          label {
+            padding-top: 5px;
+          }
+
+          span {
+            font-size: 14px;
+            color: #77787e;
+            font-weight: 400;
+            line-height: 30.1px;
+          }
+        }
+
+        .all-amazing__center__body__filter__choice__last {
+          height: fit-content;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 15px;
+        }
+      }
+
+      
+
+      .all-amazing__center__body__products {
+        width: 1375px;
+        height: fit-content;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        .all-amazing__center__body__products__sort {
+          width: 1355px;
+          height: 50px;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          column-gap: 15px;
+          border-bottom: 1px solid #e0e0e2;
+          box-shadow: 0 0px 0.5px #2b2b2b;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+          .all-amazing__center__body__products__sort__desc {
+            font-family: var(--IranYekan);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 26.04px;
+            color: #424750;
+            cursor: pointer;
+          }
+
+          .toggle-radio {
+            display: none;
+          }
+
+          .all-amazing__center__body__products__sort__items,
+          .all-amazing__center__body__products__sort__special {
+            font-family: var(--IranYekan);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 26.04px;
+            color: #81858b;
+            cursor: pointer;
+          }
+
+          .all-amazing__center__body__products__sort__special {
+            color: #ef394e;
+          }
+
+          .toggle-radio:checked
+            + .all-amazing__center__body__products__sort__items,
+          .toggle-radio:checked
+            + .all-amazing__center__body__products__sort__special {
+            color: #ef394e;
+          }
+
+          .toggle-radio:checked
+            + .all-amazing__center__body__products__sort__items
+            ~ .all-amazing__center__body__products__sort__special {
+            color: #81858b;
+          }
+
+          .all-amazing__center__body__products__sort__count {
+            font-family: var(--IranYekan);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 26.04px;
+            color: #81858b;
+            padding-right: 515px;
+          }
+        }
+
+        .all-amazing__center__body__products__body {
+          width: 1355px;
+          height: fit-content;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
+          .all-amazing__center__body__products__body__items {
+            width: 271px;
+            height: 515px;
+            background-color: darkolivegreen;
+
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: flex-start;
+            row-gap: 5px;
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-left: 5px;
+            border-bottom: 1px solid #e0e0e2;
+            border-left: 1px solid #e0e0e2;
+            .svg {
+              height: 15px;
+              align-self: start;
+              img {
+                width: 116px;
+                height: 14px;
+              }
+            }
+            .all-amazing__center__body__products__body__items__img {
+              width: 240px;
+              height: 240px;
+              align-self: center;
+            }
+            .all-amazing__center__body__products__body__items__info {
+              width: 100%;
+              display: flex;
+              flex-flow: column wrap;
+              row-gap: 7px;
+              cursor: pointer;
+              padding-top: 30px;
+
+              h3 {
+                height: 52px;
+                font-family: var(--IranYekan), sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 26.04px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: right;
+                color: #636372;
+              }
+              .all-amazing__center__body__products__body__items__info__point {
+                width: inherit;
+                height: 18px;
+                font-family: var(--IranYekan), sans-serif;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 23.87px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 5px;
+                .all-amazing__center__body__products__body__items__info__delivery-type {
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+                  column-gap: 5px;
+
+                  img {
+                    width: 18px;
+                    height: 18px;
+                  }
+                }
+
+                span {
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 26.04px;
+                  color: #6a6a74;
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+                  column-gap: 10px;
+                }
+              }
+
+              .all-amazing__center__body__products__body__items__info__discount {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                padding-top: 5px;
+                .all-amazing__center__body__products__body__items__info__discount__appearance {
+                  width: 20%;
+                  h6 {
+                    width: 34px;
+                    height: 20px;
+                    font-family: var(--IranYekan);
+                    font-size: 12px;
+                    padding-top: 3px;
+                    background-color: #d32f2f;
+                    border-radius: 16px;
+                    color: #fff;
+                  }
+                }
+
+                .all-amazing__center__body__products__body__items__info__price__appearance {
+                  width: 80%;
+                  height: 25px;
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: flex-end;
+                  align-items: center;
+                  column-gap: 8px;
+                  padding-left: 8px;
+                  h5 {
+                    color: #3f4064;
+                    font-family: var(--IranYekan), sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 33.6px;
+                  }
+                  .toman {
+                    width: 15.99px;
+                    height: 15.99px;
+                  }
+                }
+              }
+              .oldPrice {
+                color: #c0c2c5;
+                font-family: var(--IranYekan);
+                font-size: 12px;
+                font-weight: 400;
+                text-align: left;
+                text-decoration: line-through;
+                padding-left: 32px;
+                padding-top: 10px;
+              }
+
+              .sold {
+                height: 4px;
+                div {
+                  height: 4px;
+                  background-color: #f0f0f1;
+                  .sold__out {
+                    width: 71%;
+                    height: inherit;
+                    background-color: #ef394e;
+                    margin-right: 29%;
+                  }
+                  .sold__out2 {
+                    width: 51%;
+                    height: inherit;
+                    background-color: #ef394e;
+                    margin-right: 49%;
+                  }
+                }
+              }
+              .count-sold {
+                height: 4px;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+
+                .countDown {
+                  width: 60%;
+                  color: #ef394e;
+                  font-family: var(--IranYekan), sans-serif;
+                  font-size: 12px;
+                  font-weight: 700;
+                  text-align: left;
+                  padding-left: 5px;
+                }
+                .sold-percent {
+                  font-family: var(--IranYekan), sans-serif;
+                  font-size: 11px;
+                  font-weight: 400;
+                  color: #acafb3;
+                  span {
+                    font-size: 10px;
+                    color: #ef394e;
+                  }
+                }
+              }
+              .discount-end {
+                height: fit-content;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .hline {
+                  width: 33%;
+                  height: 1px;
+                  background-color: #c0c2c5;
+                }
+                span {
+                  font-family: var(--IranYekan);
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 26.04px;
+                  color: #c0c2c5;
+                }
+              }
+            }
+          }
+          .all-amazing__center__body__products__body__items__last {
+            width: 271px;
+            height: 515px;
+            background-color: darkolivegreen;
+
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: flex-start;
+            row-gap: 5px;
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-left: 5px;
+            border-bottom: 1px solid #e0e0e2;
+            .svg {
+              height: 15px;
+              align-self: start;
+              img {
+                width: 116px;
+                height: 14px;
+              }
+            }
+            .all-amazing__center__body__products__body__items__img {
+              width: 240px;
+              height: 240px;
+              align-self: center;
+            }
+            .all-amazing__center__body__products__body__items__info {
+              width: 100%;
+              display: flex;
+              flex-flow: column wrap;
+              row-gap: 7px;
+              cursor: pointer;
+              padding-top: 30px;
+
+              h3 {
+                height: 52px;
+                font-family: var(--IranYekan), sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 26.04px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: right;
+                color: #636372;
+              }
+              .all-amazing__center__body__products__body__items__info__point {
+                width: inherit;
+                height: 18px;
+                font-family: var(--IranYekan), sans-serif;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 23.87px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 5px;
+                .all-amazing__center__body__products__body__items__info__delivery-type {
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+                  column-gap: 5px;
+
+                  img {
+                    width: 18px;
+                    height: 18px;
+                  }
+                }
+
+                span {
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 26.04px;
+                  color: #6a6a74;
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+                  column-gap: 10px;
+                }
+              }
+
+              .all-amazing__center__body__products__body__items__info__discount {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                padding-top: 5px;
+                .all-amazing__center__body__products__body__items__info__discount__appearance {
+                  width: 20%;
+                  h6 {
+                    width: 34px;
+                    height: 20px;
+                    font-family: var(--IranYekan);
+                    font-size: 12px;
+                    padding-top: 3px;
+                    background-color: #d32f2f;
+                    border-radius: 16px;
+                    color: #fff;
+                  }
+                }
+
+                .all-amazing__center__body__products__body__items__info__price__appearance {
+                  width: 80%;
+                  height: 25px;
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: flex-end;
+                  align-items: center;
+                  column-gap: 8px;
+                  padding-left: 8px;
+                  h5 {
+                    color: #3f4064;
+                    font-family: var(--IranYekan), sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 33.6px;
+                  }
+                  .toman {
+                    width: 15.99px;
+                    height: 15.99px;
+                  }
+                }
+              }
+              .oldPrice {
+                color: #c0c2c5;
+                font-family: var(--IranYekan);
+                font-size: 12px;
+                font-weight: 400;
+                text-align: left;
+                text-decoration: line-through;
+                padding-left: 32px;
+                padding-top: 10px;
+              }
+
+              .sold {
+                height: 4px;
+                div {
+                  height: 4px;
+                  background-color: #f0f0f1;
+                  .sold__out {
+                    width: 71%;
+                    height: inherit;
+                    background-color: #ef394e;
+                    margin-right: 29%;
+                  }
+                  .sold__out2 {
+                    width: 35%;
+                    height: inherit;
+                    background-color: #ef394e;
+                    margin-right: 65%;
+                  }
+                }
+              }
+              .count-sold {
+                height: 4px;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+
+                .countDown {
+                  width: 60%;
+                  color: #ef394e;
+                  font-family: var(--IranYekan), sans-serif;
+                  font-size: 12px;
+                  font-weight: 700;
+                  text-align: left;
+                  padding-left: 5px;
+                }
+                .sold-percent {
+                  font-family: var(--IranYekan), sans-serif;
+                  font-size: 11px;
+                  font-weight: 400;
+                  color: #acafb3;
+                  span {
+                    font-size: 10px;
+                    color: #ef394e;
+                  }
+                }
+              }
+              .discount-end {
+                height: fit-content;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .hline {
+                  width: 33%;
+                  height: 1px;
+                  background-color: #c0c2c5;
+                }
+                span {
+                  font-family: var(--IranYekan);
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 26.04px;
+                  color: #c0c2c5;
+                }
+              }
+            }
+          }
+
+          .all-amazing__center__body__products__body__items:hover,
+          .all-amazing__center__body__products__body__items__last:hover {
+            box-shadow: 1px 1px 10px #c7c4c4;
+            z-index: 1;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.details {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  h5 {
+    font-size: 15px;
+    color: #3f4064;
+    font-weight: 700;
+    line-height: 32.25px;
+  }
+  .all-amazing__center__body__filter__check__dropDown {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.scroll {
+  max-height: 360px;
+  overflow-y: auto;
+  .details__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    column-gap: 15px;
+
+    .details__type {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 170px;
+      border-bottom: 1px solid #e0e0e2;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      .details__type__en {
+        font-family: var(--IranYekan), sans-serif;
+        font-size: 12px !important;
+        font-weight: 400;
+        line-height: 26.04px;
+        color: #81858b;
+      }
+    }
+
+    .details__type__last {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 150px;
+      .details__type__en {
+        font-family: var(--IranYekan), sans-serif;
+        font-size: 12px !important;
+        font-weight: 400;
+        line-height: 26.04px;
+        color: #81858b;
+      }
+    }
+  }
+}
+
+.all-amazing__center__body__filter__search {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  position: relative;
+  img{
+    position: absolute;
+    right: 15px;
+    fill: #424750;
+  }
+
+  input[type="text"] {
+    width: 210px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e2;
+    padding-right: 50px;
+    font-family: var(--IranYekan);
+    font-size: 15px;
+    font-weight: 400;
+    color: #3f4064;
+    &::placeholder {
+      font-family: var(--IranYekan);
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}

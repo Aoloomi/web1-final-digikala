@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: fit-content; */
+}
+@font-face {
+  font-family: IranYekan;
+  src: url("../../fonts/fa/IRANYekanWeb.eot");
+  src: url("../../fonts/fa/IRANYekanWeb.ttf");
+  src: url("../../fonts/fa/IRANYekanWeb.woff");
+  src: url("../../fonts/fa/IRANYekanWeb.woff2");
+}
+@font-face {
+  font-family: BNazanin;
+  src: url("../../fonts/fa/BNazanin.eot");
+  src: url("../../fonts/fa/BNazanin.ttf");
+  src: url("../../fonts/fa/BNazanin.woff");
+  src: url("../../fonts/fa/BNazanin.woff2");
+}
+:root {
+  --IranYekan: IranYekan;
+  --BNazanin: BNazanin;
+}
+.wrapper {
+  width: 100%;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  box-shadow: inset 0 0 2px lightgray;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom CheckBox*/
+input[type="checkbox"] + .custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 2px solid #46476a;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #008eb2;
+  border-color: #008eb2;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -65%) rotate(49deg);
+  display: block;
+}
+
+/* Switch Button */
+.switch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  border-radius: 34px;
+  background-color: #ffffff;
+  border: 2px solid #a1a3a8;
+  cursor: pointer;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #a1a3a8;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+input:checked + .switch {
+  background-color: #19bfd3;
+  border: none;
+  transition: 0.2s;
+}
+
+input:checked + .switch::before {
+  transform: translateX(22px);
+  bottom: 5px;
+  background-color: #ffffff;
+}
+
+/* Price Range */
+.details-summary {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+  h5 {
+    font-size: 15px;
+    color: #3f4064;
+    font-weight: 700;
+    line-height: 32.25px;
+  }
+  .all-amazing__center__body__filter__choice__dropDown {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+summary::after {
+  content: "";
+  font-size: 12px;
+  margin-right: 80px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.details-content {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+  .price-range {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 20px;
+    font-family: var(--IranYekan);
+    color: #81858b;
+    div input {
+      width: 140px;
+      height: 50px;
+      font-family: var(--IranYekan);
+      font-size: 26px;
+      border: unset;
+      background-color: unset;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e2;
+      color: #3f4064;
+      font-weight: 800;
+      line-height: 54.6px;
+    }
+  }
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+details[open] .price-range-summary {
+  display: none;
+}
+
+.range-slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* نوار لغزان درست نشد */
+.range-slider input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #e0e0e2;
+  border-radius: 5px;
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #19bfd3;
+  cursor: pointer;
+}
+
+input[type="range"]:active {
+  opacity: 1;
+}
+
+/* تغییر اسکرول صفحه*/
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #F0F0F1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb; 
+}
+
+
